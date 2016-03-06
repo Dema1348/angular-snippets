@@ -3,8 +3,9 @@
 (function() {
 	'use strict';
 
-	angular.module('${1:app}')
-	.factory('${2}Factory', ${2}Factory);
+	angular
+    .module('${1:app}')
+	 .factory('${2}Factory', ${2}Factory);
 
   ${2}Factory.\$inject = [];
 
@@ -22,5 +23,5 @@
 
 })();
 ]]></content>
-	<tabTrigger>a-fact</tabTrigger>
+	<tabTrigger>a.fact</tabTrigger>
 </snippet>

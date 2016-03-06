@@ -6,5 +6,5 @@
   ${2}
 });
 ]]></content>
-  <tabTrigger>a-watch</tabTrigger>
+  <tabTrigger>a.watch</tabTrigger>
 </snippet>

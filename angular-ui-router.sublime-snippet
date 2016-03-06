@@ -10,7 +10,7 @@
   config.\$inject = ['\$stateProvider', '\$urlRouterProvider'];
 
   function config(\$stateProvider, \$urlRouterProvider) {
-    \$urlRouterProvider.otherwise('/${2}');
+   
 
     \$stateProvider
       .state('${2}', {
@@ -59,8 +59,10 @@
         }
       });
 
+       \$urlRouterProvider.otherwise('/${2}');
+
   }
 })();
 ]]></content>
-  <tabTrigger>a-router</tabTrigger>
+  <tabTrigger>a.router</tabTrigger>
 </snippet>

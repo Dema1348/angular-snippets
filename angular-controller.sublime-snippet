@@ -3,18 +3,19 @@
 (function() {
   'use strict';
 
-  angular.module('${1:app}')
-  .controller('${2}Ctrl', ${2}Ctrl);
+  angular
+    .module('${1:app}')
+    .controller('${2}', ${2});
 
-  $2Ctrl.\$inject = [];
+  $2.\$inject = [];
 
-  function ${2}Ctrl() {
-    var self = this;
+  function ${2}() {
+    var vm = this;
 
     ${3}
   }
 
 })();
 ]]></content>
-  <tabTrigger>a-ctrl</tabTrigger>
+  <tabTrigger>a.ctrl</tabTrigger>
 </snippet>

@@ -3,8 +3,9 @@
 (function() {
 	'use strict';
 
-	angular.module('${1:app}')
-	.directive('${2}', ${2});
+	angular
+    .module('${1:app}')
+	 .directive('${2}', ${2});
 
 	function ${2}() {
     var directive = {
@@ -21,5 +22,5 @@
 
 })();
 ]]></content>
-	<tabTrigger>a-dir</tabTrigger>
+	<tabTrigger>a.dir</tabTrigger>
 </snippet>
