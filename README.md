@@ -25,7 +25,7 @@ git clone https://github.com/Dema1348/angular-snippets.git
 
 ## Examples
 ```
-a.module
+a.mod
 
 (function() {
 	angular.module('${1:app}', [$2]);
@@ -34,7 +34,7 @@ a.module
 ```
 
 ```
-a.ctrl
+a.ctr
 
 (function() {
   'use strict';
@@ -55,7 +55,7 @@ a.ctrl
 ```
 
 ```
-a.fact
+a.fac
 
 (function() {
 	'use strict';
