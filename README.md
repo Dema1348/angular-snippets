@@ -82,6 +82,8 @@ a.fact
 ```
 
 ```
+a.dir
+
 (function() {
 	'use strict';
 
