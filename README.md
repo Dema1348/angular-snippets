@@ -6,82 +6,90 @@ Clone this repo into your sublime user folder. Type the trigger(e.g. a-fact) and
 Linux:
 ```
 cd "~/.config/sublime-text-3/Packages/User"
-git clone https://github.com/cyung/angular-snippets.git
+git clone https://github.com/Dema1348/angular-snippets.git
 ```
 
 
 Mac: 
 ```
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-git clone https://github.com/cyung/angular-snippets.git
+git clone https://github.com/Dema1348/angular-snippets.git
 ```
 
 
 Windows:
 ```
 cd "C:/Users/%NAME%/AppData/Roaming/Sublime Text 3/Packages/User"
-git clone https://github.com/cyung/angular-snippets.git
+git clone https://github.com/Dema1348/angular-snippets.git
 ```
 
 ## Examples
 ```
-a-app
+a.module
 
-angular.module('app', ['']);
+(function() {
+	angular.module('${1:app}', [$2]);
+})();
+
 ```
 
 ```
-a-ctrl
+a.ctrl
 
 (function() {
   'use strict';
 
-  angular.module('app')
-  .controller('<Name>Ctrl', <name>Ctrl);
+  angular
+    .module('${1:app}')
+    .controller('${2}', ${2});
 
-  function <name>Ctrl() {
-    var self = this;
+  $2.\$inject = [];
 
-    
+  function ${2}() {
+    var vm = this;
+
+    ${3}
   }
 
 })();
 ```
 
 ```
-a-fact
+a.fact
 
 (function() {
-  'use strict';
+	'use strict';
 
-  angular.module('app')
-  .factory('<name>Factory', <name>Factory);
+	angular
+    .module('${1:app}')
+ 	 .factory('${2}Factory', ${2}Factory);
 
-  function <name>Factory() {
+  ${2}Factory.\$inject = [];
+
+	function ${2}Factory(${3}) {
     var services = {
-      <function name>: <function name>
+      ${4}: ${4},
     };
 
     return services;
 
-    function <function name>() {
-      
+    function ${4}(${5}) {
+      ${6}
     }
-  }
+	}
 
 })();
 ```
 
 ```
-a-dir
-
 (function() {
-  'use strict';
+	'use strict';
 
-  angular.module('app')
-  .directive('<name>', <name>);
+	angular
+    .module('${1:app}')
+	  .directive('${2}', ${2});
 
-  function <name>() {
+	function ${2}() {
     var directive = {
       template: '',
       link: link
@@ -90,9 +98,9 @@ a-dir
     return directive;
 
     function link(scope, elem, attrs) {
-      
+      ${3}
     }
-  }
+	}
 
 })();
 ```
